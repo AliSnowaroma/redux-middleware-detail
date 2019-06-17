@@ -1,0 +1,50 @@
+{
+  "name": "npm-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=dev webpack-dev-server --open --config ./config/webpack.dev.config.js --inline --progress --colors --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.production.config.js --progress --colors --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "babel-loader": "^8.0.6",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "globals": "^11.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-loader": "0.0.1",
+    "image-webpack-loader": "^4.3.1",
+    "imagemin-optipng": "^5.2.1",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
